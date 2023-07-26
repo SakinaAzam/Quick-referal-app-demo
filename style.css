@@ -160,9 +160,7 @@
   transform: scale(1.5); 
 }
   @media (min-width: 2560px) {
-    body {
-      font-size: 30px;
-    }
+   
      .illustration {
         min-width: 1000px;
       }
