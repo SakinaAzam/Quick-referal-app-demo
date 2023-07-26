@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Link Sharing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+
+  </head>
+  <body>
+    <div class="main-container">
+      <div>
+        <h4  style="font-size: 25px; margin: 0; font-weight: bolder; color: white;">ThejobsCo.io</h4>
+      </div>
+    <div  class="content-div">
+        <div class="copyLink">
+        <p style="font-size: 14px; ">THE MOST COMPLETE ALL-IN-ONE SOLUTION FOR JOB SEEKERS</p>
+        <p style="color: white; font-size: 40px; margin:0 0 20px 0 ;">
+         <span style="font-weight: bolder; ">Refer</span> -Your experience<br> with your connections via link
+        </p>
+        <div class="form-container">
+         <div class="input-flex">
+            <div>
+             <i  class="fas fa-link link-icon"></i>
+          <input
+            type="text"
+            id="linkInput"
+            class="link"
+            style="color: white; font-size: 14px;"
+            value=" https://getbootstrap.com/"
+            readonly
+          />
+         </div>
+        <div>
+              <!-- <i
+            class="far fa-copy copy-link-icon"
+            onclick="copyLink()" 
+            title="Copy Link"
+          ></i> -->
+          <button 
+            id="copyButton"
+            onclick="copyLink()"
+             class="copy-icon far fa-copy copy-link-icon"
+          ></button>
+        </div>
+         </div>
+        </div>
+              <div  style="display: flex;">
+                 <button  class="toggleButton" style="color: #544FE8; font-size: larger;" id="toggleButton"> <i class="fas fa-share-alt"></i></button>
+             <div style="padding: 10px;">
+                 <div id="textContainer" style="display: flex;">
+                  
+                <div class="share-icons">
+            <i
+            class="fas fa-envelope"
+            onclick="shareViaEmail()"
+            title="Email"
+          ></i>
+          <i
+            class="fab fa-whatsapp"
+            onclick="shareViaWhatsApp()"
+            title="WhatsApp"
+          ></i>
+          <i class="fas fa-comment-alt" onclick="shareViaSMS()" title="SMS"></i>
+          <i
+            class="fab fa-facebook"
+            onclick="shareViaFacebook()"
+            title="Facebook"
+          ></i>
+          <i
+            class="fab fa-instagram"
+            onclick="shareViaInstagram()"
+            title="Instagram"
+          ></i>
+          <!-- <i
+            class="fab fa-pinterest"
+            onclick="shareViaPinterest()"
+            title="Pinterest"
+          ></i> -->
+          <i class="fab fa-google" onclick="shareViaGmail()" title="Gmail"></i>
+          <i
+            class="fab fa-twitter"
+            onclick="shareViaTwitter()"
+            title="Twitter"
+          ></i>
+          <i
+            class="fab fa-linkedin"
+            onclick="shareViaLinkedIn()"
+            title="LinkedIn"
+          ></i>
+  </div>
+         
+          </div>
+             </div>
+              </div>
+        <!-- <img src="illustration2.gif" class="illustration2" alt="Email" /> -->
+      </div>
+      <div class="pic-side">
+        <img src="elementor.svg" class="illustration" alt="Email" />
+      </div>
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="./script.js"></script>
+  </body>
+</html>
