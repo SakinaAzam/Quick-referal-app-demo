@@ -63,15 +63,6 @@ toggleButton.addEventListener('click', function() {
           "https://www.instagram.com/?url=" + encodeURIComponent(link);
         window.open(instagramLink);
       }
-
-      function shareViaPinterest() {
-        var link = document.getElementById("linkInput").value;
-        var pinterestLink =
-          "https://www.pinterest.com/pin/create/button/?url=" +
-          encodeURIComponent(link);
-        window.open(pinterestLink);
-      }
-
       function shareViaGmail() {
         var link = document.getElementById("linkInput").value;
         var gmailLink =
