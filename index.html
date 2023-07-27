@@ -8,17 +8,72 @@
     />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg " style="background-color: white;  height: 78px; padding-left: 120px; padding-right: 120px;" >
+  <div class="container-fluid" style="padding: 0px; display: flex; flex-wrap: wrap;">
+   <div>
+     <a class="navbar-brand" href="#"><img src="./images/Link.svg" alt="Logo" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="color: #0700DD;" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   </div>
+  <div >
+     <ul class="nav justify-content-center" style="font-size: 18px; font-weight:640 ; color: #0700DD; " >
+           <li class="nav-item dropdown dropdown-container">
+          <a class="nav-link "  href="#" role="button"  aria-expanded="false">
+            Apply For Me
+          </a>
+          <ul class="dropdown-content">
+            <div style="display: flex; gap: 1rem; ">
+                <img src="./images/🦆 icon _play_.svg"  style="width: 15px;" alt="">
+                <a class="dropdown-item" href="https://thejobsco.io/demo/" style="font-size: 15px; font-weight: bold;">Live Demo</a>
+            </div>
+            <div style="display: flex; gap: 1rem; ">
+                  <img src="./images/🦆 icon _Alternate Expand Arrows_.svg" style="width: 15px;" alt="">
+                <a class="dropdown-item" href="https://thejobsco.io/compare/" style="font-size: 15px; font-weight: bold;">Compare</a>
+            </div>
+            <div style="display: flex; gap: 1rem; ">
+                  <img src="./images/🦆 icon _Grinning Face_.svg" style="width: 15px;" alt="">
+                <a class="dropdown-item" href="https://thejobsco.io/usecases/" style="font-size: 15px; font-weight: bold;">Use Cases</a>
+            </div>
+            <div style="display: flex; gap: 1rem; ">
+                  <img src="./images/🦆 icon _headphones_.svg" style="width: 15px;" alt="">
+                <a class="dropdown-item" href="https://thejobsco.io/support/" style="font-size: 15px; font-weight: bold;">Support</a>
+            </div>
+            <div style="display: flex; gap: 1rem; ">
+                  <img src="./images/🦆 icon _Comments Dollar_.svg" style="width: 15px;" alt="">
+                <a class="dropdown-item" href="https://affiliates.thejobsco.io/" style="font-size: 15px; font-weight: bold;">Earn with us</a>
+            </div>
+            <div style="display: flex; gap: 1rem; ">
+                  <img src="./images/🦆 icon _Question Circle_.svg" style="width: 15px;" alt="">
+                <a class="dropdown-item" href="https://thejobsco.io/faq/" style="font-size: 15px; font-weight: bold;">FAQs</a>
+            </div>
+
+
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://thejobsco.io/pricing-and-benefits/">Pricing and Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://thejobsco.io/howitworks/">How its Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://community.thejobsco.io/">Community</a>
+        </li>
+    </ul>
+</div>
+<button class="btn btn-outline-success" type="submit" style="height: 42px; width: 165px; background-color: #FF5461; border-radius: 25px; color: white; border: none;"> Get Started</button> 
+  </div>
+</nav>
     <div class="main-container">
-      <div>
-        <h4  style="font-size: 25px; margin: 0; font-weight: bolder; color: white;">ThejobsCo.io</h4>
-      </div>
     <div  class="content-div">
         <div class="copyLink">
-        <p style="font-size: 14px; ">THE MOST COMPLETE ALL-IN-ONE SOLUTION FOR JOB SEEKERS</p>
+        <p style="font-size: 14px; color: white;">THE MOST COMPLETE ALL-IN-ONE SOLUTION FOR JOB SEEKERS</p>
         <p style="color: white; font-size: 40px; margin:0 0 20px 0 ;">
          <span style="font-weight: bolder; ">Refer</span> -Your experience<br> with your connections via link
         </p>
@@ -36,11 +91,6 @@
           />
          </div>
         <div>
-              <!-- <i
-            class="far fa-copy copy-link-icon"
-            onclick="copyLink()" 
-            title="Copy Link"
-          ></i> -->
           <button 
             id="copyButton"
             onclick="copyLink()"
@@ -54,57 +104,34 @@
              <div style="padding: 10px;">
                  <div id="textContainer" style="display: flex;">
                   
-                <div class="share-icons">
-            <i
-            class="fas fa-envelope"
-            onclick="shareViaEmail()"
-            title="Email"
-          ></i>
-          <i
-            class="fab fa-whatsapp"
-            onclick="shareViaWhatsApp()"
-            title="WhatsApp"
-          ></i>
-          <i class="fas fa-comment-alt" onclick="shareViaSMS()" title="SMS"></i>
-          <i
-            class="fab fa-facebook"
-            onclick="shareViaFacebook()"
-            title="Facebook"
-          ></i>
-          <i
-            class="fab fa-instagram"
-            onclick="shareViaInstagram()"
-            title="Instagram"
-          ></i>
-          <!-- <i
-            class="fab fa-pinterest"
-            onclick="shareViaPinterest()"
-            title="Pinterest"
-          ></i> -->
-          <i class="fab fa-google" onclick="shareViaGmail()" title="Gmail"></i>
-          <i
-            class="fab fa-twitter"
-            onclick="shareViaTwitter()"
-            title="Twitter"
-          ></i>
-          <i
-            class="fab fa-linkedin"
-            onclick="shareViaLinkedIn()"
-            title="LinkedIn"
-          ></i>
-  </div>
-         
+        <div class="share-icons">
+          <img src="./images/Gmail.svg"  onclick="shareViaSMS()" title="Email" alt="">
+          <div class="line"></div>
+          <img src="./images/whatsapp circle.svg"   " onclick="shareViaSMS()" title="whatsapp" alt="">
+          <div class="line"></div>
+          <img src="./images/Messages.svg"   onclick="shareViaSMS()" title="SMS" alt="">
+          <div class="line"></div>
+          <img src="./images/Facebook.svg"   onclick="shareViaSMS()" title="facebook" alt="">
+          <div class="line"></div>
+          <img src="./images/Instagram.svg"  onclick="shareViaSMS()" title="instagram" alt="">
+          <div class="line"></div>
+         <img src="./images/Google.svg"   onclick="shareViaSMS()" title="google" alt="">
+         <div class="line"></div>
+          <img src="./images/Twitter.svg"  onclick="shareViaSMS()" title="twitter" alt="">
+          <div class="line"></div>
+          <img src="./images/Linkedin.svg"   onclick="shareViaSMS()" title="linkedin" alt="">
+  </div> 
           </div>
              </div>
               </div>
-        <!-- <img src="illustration2.gif" class="illustration2" alt="Email" /> -->
       </div>
       <div class="pic-side">
-        <img src="elementor.svg" class="illustration" alt="Email" />
+        <img src="./images/ezgif.com-crop.gif" class="illustration" alt="Email" />
       </div>
     </div>
     </div>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="./script.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
