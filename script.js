@@ -36,7 +36,9 @@ toggleButton.addEventListener('click', function() {
           encodeURIComponent(body);
         window.open(mailtoLink);
       }
-
+ function redirectToGetStarted() {
+   window.location.href = "https://checkout.thejobsco.io/";
+ }
       function shareViaWhatsApp() {
         var link = document.getElementById("linkInput").value;
         var whatsappLink =
@@ -44,11 +46,11 @@ toggleButton.addEventListener('click', function() {
         window.open(whatsappLink);
       }
 
-      function shareViaSMS() {
-        var link = document.getElementById("linkInput").value;
-        var smsLink = "sms:?body=" + encodeURIComponent(link);
-        window.open(smsLink);
-      }
+     function shareViaSMS() {
+       var link = document.getElementById("linkInput").value;
+       var smsLink = "sms:?body=" + encodeURIComponent(link);
+       window.open(smsLink);
+     }
 
       function shareViaFacebook() {
         var link = document.getElementById("linkInput").value;
