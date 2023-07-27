@@ -178,7 +178,7 @@
         
       }
       .share-icons img {
-     width:20px;
+    
      position: relative;
      cursor: pointer;
      transition: transform 0.3s ease, color 0.3s ease;
